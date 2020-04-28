@@ -1,0 +1,20 @@
+.center{
+    text-align: center;
+}
+
+body {
+    background-color: black;
+}
+
+/* --- Info --- */
+font#intro {
+    color: white;
+    font-size: 200%;    
+    font-weight: bold;
+    font-family: monospace;
+    font-style:oblique;
+}
+
+img#profile {
+    width: calc(100vw/2); 
+}
