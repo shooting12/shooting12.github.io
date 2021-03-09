@@ -16,7 +16,7 @@ font#intro {
 }
 font#intro_smaller {
     color: black;
-    font-size: 150%;    
+    font-size: 180%;    
     font-weight: bold;
     font-family: monospace;
     font-style:oblique;
@@ -27,7 +27,7 @@ img#icon_fish {
 }
 
 img#UnderConstruction {
-    width: calc(100vw/4); 
+    width: calc(100vw/3); 
 }
 
 /* --- Bottom --- */
@@ -41,5 +41,5 @@ img#icon_gun {
 
 font#copyright {
     color: gray;
-    font-size: 120%;  
+    font-size: 130%;  
 }
