@@ -1,0 +1,45 @@
+.center{
+    text-align: center;
+}
+
+body {
+    background-color: lightblue;
+}
+
+/* --- Top --- */
+font#intro {
+    color: black;
+    font-size: 200%;    
+    font-weight: bold;
+    font-family: monospace;
+    font-style:oblique;
+}
+font#intro_smaller {
+    color: black;
+    font-size: 150%;    
+    font-weight: bold;
+    font-family: monospace;
+    font-style:oblique;
+}
+
+img#icon_fish {
+    width: calc(100vw/16); 
+}
+
+img#UnderConstruction {
+    width: calc(100vw/4); 
+}
+
+/* --- Bottom --- */
+div#divider_bottom {
+    height: 100px;
+}
+
+img#icon_gun {
+    width: calc(100vw/12); 
+}
+
+font#copyright {
+    color: gray;
+    font-size: 120%;  
+}
