@@ -43,3 +43,7 @@ font#copyright {
     color: gray;
     font-size: 150%;  
 }
+
+img#qr_code {
+    width: calc(100vw/12); 
+}
