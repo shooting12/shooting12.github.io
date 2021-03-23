@@ -9,7 +9,7 @@ body {
 }
 .calendar {
   position: relative;
-  width: 600px;
+  width: 750px;
   background-color: #fff;
   box-sizing: border-box;
   box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
@@ -40,7 +40,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
   /*grid-gap: 50px;*/
   grid-row-gap: 25px;
-  grid-column-gap: 50px;
+  grid-column-gap: 75px;
   box-sizing: border-box;
 }
 .calendar__day {
