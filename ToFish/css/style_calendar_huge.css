@@ -1,11 +1,53 @@
 body {
+  /*
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  */
   font-family: 'Poppins', sans-serif;
   background: lightblue;
+}
+
+/* Misc. */
+div#divider {
+    height: 50px;
+}
+
+header#center{
+    text-align: center;
+}
+
+
+/* Month List */
+#month_link_table {
+    display:table;
+    margin-left:auto; 
+    margin-right:auto;
+}
+.month_link_tr {
+    display: table-row;
+    height: 30px;  
+}
+.month_link_td {
+    display: table-cell;
+    width: 50px;
+    border: 8px solid lightblue; 
+    size: 150%;
+}
+
+.month_link {
+    font-size: 150%;
+    color: gray;    
+}
+
+/* Calendar style */
+table#my_calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 .calendar {
   position: relative;

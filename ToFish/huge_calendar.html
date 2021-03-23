@@ -2,19 +2,69 @@
 
 <head>
     <title>Calendar</title> 
+    <script type="text/javascript" src="script/main.js"></script>
     <link rel="stylesheet" href="css/style_calendar_huge.css">
-    <link rel="icon" href="img/Tool.png">
+    <link rel="icon" href="img/Calendar.png">
 </head>
+
+<!-- Keep this coding for using javascript in html directly. -->
+  <!--
+<script>
+function myFunction2(year, month) {
+  document.getElementById("calendar_year").style.color = "gray";
+}
+</script>
+-->
+
+<header id="center"> 
+    <font color="#0000FF" face="fantasy" size="8">Happy Birthday to Fish</font>
+</header> 
 
 <body>
   
-  <table class="my_calendar">
+  <div id="divider"> </div>
+
+<!-- List date month -->
+  <!-- Keep this coding for using table layout, but javascript has problem by this way. -->
+  <!--
+  <table id="month_link_table">
+    <tr class="month_link_tr">
+        <td class="month_link_td"><a class="month_link" href="javascript: myFunction(2019,12)">2019.Dec</a></td>
+        <td class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,1)">2020.Jan</a></td>
+        <td class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,5)">2020.May</a></td>
+        <td class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,6)">2020.Jun</a></td>
+　  </tr>
+  </table>
+  -->
+  
+  <div id="divider"> </div>
+  <div id="month_link_table" border="1">
+    <div class="month_link_tr">
+        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2019,12)">2019.Dec</a></div>
+        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,1)">2020.Jan</a></div>
+        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,5)">2020.May</a></div>
+        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,6)">2020.Jun</a></div>
+        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,7)">2020.Jul</a></div>
+        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,8)">2020.Aug</a></div>
+　  </div>
+    <div class="month_link_tr">
+        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,10)">2020.Oct</a></div>
+        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,11)">2020.Nov</a></div>
+        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,12)">2020.Dec</a></div>
+        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2021,1)">2021.Jan</a></div>
+        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2021,2)">2021.Feb</a></div>
+　  </div>
+  </div>
+
+
+<!-- Show month -->
+  <table id="my_calendar">
     <tr>
       <td>
         <div class="calendar">
               <div class="calendar__picture">
-                <h2>May</h2>
-                <h3>2020</h3>
+                <h2 id="calendar_month">May</h2>
+                <h3 id="calendar_year">2020</h3>
               </div>
               <div class="calendar__date">
                 <div class="calendar__day">Sun</div>
@@ -65,4 +115,5 @@
       </td>
     </tr>
   </table>
+
 </body>
