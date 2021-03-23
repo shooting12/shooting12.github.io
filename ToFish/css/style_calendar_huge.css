@@ -11,6 +11,10 @@ body {
 }
 
 /* Misc. */
+.center{
+    text-align: center;
+}
+
 div#divider_small {
     height: 20px;
 }
@@ -22,6 +26,13 @@ header#center{
     text-align: center;
 }
 
+/* Icon image */
+img#icon_fish {
+    display: block;    
+    margin-left:auto; 
+    margin-right:auto;
+    width: calc(100vw/25); 
+}
 
 /* Month List */
 #month_link_table {
@@ -50,7 +61,7 @@ div#my_calendar {
   display: flex;
   justify-content: center;
   /*align-items: center;*/
-  height: 100vh;
+  /*height: 100vh;*/
 }
 .calendar {
   position: relative;
@@ -136,10 +147,20 @@ div#my_calendar {
 .calendar__number--event_shooting {
   border: 3px solid;
   border-radius: 70%;
-  border-color: #00e600;
+  /* Use #00e600 as circle color in the future if has different event trigger setting. */
+  border-color: #3385ff;
 }
 .calendar__number--event_fish {
   border: 4px solid;
   border-radius: 50%;
   border-color: #3385ff;
+}
+
+/* Date picture style */
+img#date_picture {
+    display: block;
+    margin-left:auto; 
+    margin-right:auto;
+    /* vw = viewport = screen width */
+    width: calc((100vw - 150px)/2); 
 }
