@@ -18,10 +18,10 @@ body {
 }
 .calendar__picture {
   position: relative;
-  height: 200px;
+  height: 300px;
   padding: 20px;
   color: #fff;
-  background: #262626 url("https://images.unsplash.com/photo-1516912481808-3406841bd33c?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=183f2924ba5a8429441804609b2d4f61") no-repeat center / cover;
+  background: #262626 url("../img/Joey.JPG") no-repeat center / cover;
   text-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   box-sizing: border-box;
 }
@@ -50,7 +50,7 @@ body {
   height: 30px;
   width: 50px;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 35px;
   color: #262626;
 }
 .calendar__day:nth-child(7) {
@@ -65,7 +65,7 @@ body {
   justify-content: center;
   height: 50px;
   width: 50px;
-  font-size: 30px;
+  font-size: 35px;
   color: #262626;
 }
 .calendar__number:nth-child(7n) {
