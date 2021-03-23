@@ -46,7 +46,7 @@ header#center{
 }
 
 /* Calendar style */
-table#my_calendar {
+div#my_calendar {
   display: flex;
   justify-content: center;
   /*align-items: center;*/
