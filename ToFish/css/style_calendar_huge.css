@@ -36,12 +36,12 @@ header#center{
 .month_link_td {
     display: table-cell;
     width: 50px;
-    border: 8px solid lightblue; 
+    border: 12px solid lightblue; 
     size: 150%;
 }
 
 .month_link {
-    font-size: 150%;
+    font-size: 175%;
     color: gray;    
 }
 
