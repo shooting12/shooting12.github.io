@@ -21,7 +21,8 @@ function myFunction2(year, month) {
 </header> 
 
 <body>  
-  <div id="divider_middle"> </div>
+  <div id="divider_small"> </div>
+
 
 <!-- List date month -->
   <div id="month_link_table" border="1">
@@ -42,7 +43,7 @@ function myFunction2(year, month) {
 　  </div>
   </div>
   <!-- Keep this coding for using table layout, but javascript has problem by this way. -->
-  
+  <!--
   <table id="month_link_table">
     <tr class="month_link_tr">
         <td class="month_link_td"><a class="month_link" href="javascript: myFunction(2019,12)">2019.Dec</a></td>
@@ -51,18 +52,19 @@ function myFunction2(year, month) {
         <td class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,6)">2020.Jun</a></td>
 　  </tr>
   </table>
-  
+  -->
 
 
 <!-- Show month -->
   <div id="divider_small"> </div>
+
   <div id="my_calendar">
     <div class="calendar">
       <div class="calendar__picture">
         <h2 id="calendar_month">May</h2>
         <h3 id="calendar_year">2020</h3>
       </div>
-      <div class="calendar__date">
+      <div class="calendar__date" id="dynamic_calendar_number">
         <div class="calendar__day">Sun</div>
         <div class="calendar__day">Mon</div>
         <div class="calendar__day">Tue</div>
@@ -70,7 +72,7 @@ function myFunction2(year, month) {
         <div class="calendar__day">Thu</div>
         <div class="calendar__day">Fri</div>
         <div class="calendar__day">Sat</div>
-        
+
         <div class="calendar__number"></div>
         <div class="calendar__number"></div>
         <div class="calendar__number"></div>

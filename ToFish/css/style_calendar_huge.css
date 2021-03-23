@@ -55,6 +55,7 @@ div#my_calendar {
 .calendar {
   position: relative;
   width: 900px;
+  height: 820px;
   background-color: #fff;
   box-sizing: border-box;
   box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
@@ -63,7 +64,7 @@ div#my_calendar {
 }
 .calendar__picture {
   position: relative;
-  height: 300px;
+  height: 250px;
   padding: 20px;
   color: #fff;
   background: #262626 url("../img/Joey.JPG") no-repeat center / cover;
@@ -122,10 +123,15 @@ div#my_calendar {
   font-weight: 700;
 }
 .calendar__number--current, .calendar__number:hover {
-  background-color: #009688;
+  background-color: #00e600;
   color: #fff !important;
   font-weight: 700;
   cursor: pointer;
+}
+.calendar__number--event {
+  border: 3px solid;
+  border-radius: 70%;
+  border-color: #3385ff;
 }
 .calendar__number--event_shooting {
   border: 3px solid;
