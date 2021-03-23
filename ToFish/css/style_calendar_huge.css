@@ -11,7 +11,10 @@ body {
 }
 
 /* Misc. */
-div#divider {
+div#divider_small {
+    height: 20px;
+}
+div#divider_middle {
     height: 50px;
 }
 
@@ -46,7 +49,7 @@ header#center{
 table#my_calendar {
   display: flex;
   justify-content: center;
-  align-items: center;
+  /*align-items: center;*/
   height: 100vh;
 }
 .calendar {
