@@ -1,5 +1,7 @@
 // Whether to turn on showing image
 var SHOW_IMAGE_AND_CAN_JUMP = true;
+// Whether to display photo in original size (result in slowly loading)
+var SHOW_ORIGINAL_SIZE_PHOTO = false;
 // Build go out event dictionary
 var eventDict = createEventDictionary();
 
@@ -193,12 +195,15 @@ function onClickToImage(clicked_id) {
 
     // Jump to show image
     window.location.href="#date_picture";
-    //window.location.hash = '#date_picture';
+
     // Dynamically give image source
-    var picture_name = clicked_id.slice(-6) + '.JPG';
-    //alert(picture_name);
-    document.getElementById("date_picture").src = "img\\DatePicture\\" + picture_name;
-    //document["date_picture"].src = ;
+    if (SHOW_ORIGINAL_SIZE_PHOTO) {
+        var picture_name = clicked_id.slice(-6) + '.JPG';
+        document.getElementById("date_picture").src = "img\\DatePicture\\" + picture_name;
+    } else {
+        var picture_name = clicked_id.slice(-6) + '.jpg';
+        document.getElementById("date_picture").src = "img\\DatePicture_smaller_50%\\" + picture_name;
+    }
 
     /* need to stop the form sending of the form
      UPDATE as comment: This may not be exactly correct syntax 
