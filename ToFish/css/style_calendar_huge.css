@@ -75,7 +75,7 @@ div#my_calendar {
 }
 .calendar__picture {
   position: relative;
-  height: 250px;
+  height: 200px;
   padding: 20px;
   color: #fff;
   background: #262626 url("../img/Joey.JPG") no-repeat center / cover;
