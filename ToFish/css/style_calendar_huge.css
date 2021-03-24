@@ -22,8 +22,14 @@ div#divider_middle {
     height: 50px;
 }
 
-header#center{
+font#title{
+    display: block;
     text-align: center;
+}
+
+div#music {
+    position:fixed; 
+    right:10px;
 }
 
 /* Icon image */
@@ -162,7 +168,7 @@ img#date_picture {
     margin-left:auto; 
     margin-right:auto;
     /* vw = viewport = screen width */
-    width: calc(100vw/2); 
+    width: calc((100vw - 25px)/2); 
 }
 
 /* Bottom */

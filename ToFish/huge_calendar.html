@@ -17,8 +17,15 @@ function myFunction2(year, month) {
 -->
 
 
-<header id="center"> 
-    <font color="#0000FF" face="fantasy" size="8">Happy Birthday to Fish</font>
+<header> 
+    <font id="title" color="#0000FF" face="fantasy" size="8">Happy Birthday to Fish</font>
+
+    <div  id="music">
+        <audio controls>
+          <source src="music/LoveAppearance_Part.mp3" type="audio/mpeg">
+          Your browser does not support audio tag！
+        </audio>
+    </div>
 </header> 
 
 <body onload="myFunction(2020, 5)">
@@ -41,13 +48,7 @@ function myFunction2(year, month) {
         <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,11)">2020.Nov</a></div>
         <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,12)">2020.Dec</a></div>
         <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2021,1)">2021.Jan</a></div>
-        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2021,2)">2021.Feb</a></div>
-        <div class="month_link_td">
-            <audio controls>
-              <source src="music/LoveAppearance_Part.mp3" type="audio/mpeg">
-              Your browser does not support audio tag！
-            </audio>
-        </div>
+        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2021,2)">2021.Feb</a></div>            
 　  </div>
   </div>
   <!-- Keep this coding for using table layout, but javascript has problem by this way. -->
