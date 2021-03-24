@@ -162,7 +162,7 @@ img#date_picture {
     margin-left:auto; 
     margin-right:auto;
     /* vw = viewport = screen width */
-    width: calc((100vw - 150px)/2); 
+    width: calc(100vw/2); 
 }
 
 /* Bottom */
