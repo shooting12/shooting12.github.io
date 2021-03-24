@@ -202,7 +202,7 @@ function onClickToImage(clicked_id) {
         document.getElementById("date_picture").src = "img\\DatePicture\\" + picture_name;
     } else {
         var picture_name = clicked_id.slice(-6) + '.jpg';
-        document.getElementById("date_picture").src = "img\\DatePicture_smaller_50%\\" + picture_name;
+        document.getElementById("date_picture").src = "img\\DatePicture_halfsize\\" + picture_name;
     }
 
     /* need to stop the form sending of the form
