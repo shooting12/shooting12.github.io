@@ -14,7 +14,6 @@ body {
 .center{
     text-align: center;
 }
-
 div#divider_small {
     height: 20px;
 }
@@ -22,17 +21,17 @@ div#divider_middle {
     height: 50px;
 }
 
-font#title{
-    display: block;
-    text-align: center;
-}
-
-div#music {
+/* Header */
+audio#music {
     position:fixed; 
     right:10px;
 }
 
-/* Icon image */
+/* Top */
+font#title{
+    display: block;
+    text-align: center;
+}
 img#icon_fish {
     display: block;    
     margin-left:auto; 
