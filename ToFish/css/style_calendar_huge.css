@@ -24,7 +24,7 @@ div#divider_middle {
 /* Header */
 audio#music {
     position:fixed; 
-    right: 0px;
+    left: 5px;
 }
 
 /* Top */
