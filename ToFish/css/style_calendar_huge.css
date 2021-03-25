@@ -171,11 +171,11 @@ img#date_picture {
 }
 
 /* Bottom */
-img#icon_gun {
+img#qr_code {
     display: block;
     margin-left:auto; 
     margin-right:auto;
-    width: calc(100vw/20);
+    width: calc(100vw/12); 
 }
 
 font#copyright {
@@ -184,9 +184,9 @@ font#copyright {
     font-size: 150%;  
 }
 
-img#qr_code {
-    display: block;
+img#icon_gun {
+    display: inline-block;
     margin-left:auto; 
     margin-right:auto;
-    width: calc(100vw/12); 
+    width: calc(100vw/20);
 }

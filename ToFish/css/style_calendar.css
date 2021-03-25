@@ -1,9 +1,11 @@
 body {
+  /*
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  */
   font-family: 'Poppins', sans-serif;
   background: lightblue;
 }
@@ -21,9 +23,42 @@ body::before {
 }
 */
 
+.center{
+    text-align: center;
+}
+
+/* Title */
+div#title_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+img#icon_fish {
+  width: calc(100vw/25); 
+}
+p#title{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+img#icon_gun {
+  width: calc(100vw/25);
+  transform: scaleX(-1);
+}
+
+
+/* Body */
+
+table#show_table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 .calendar {
   position: relative;
   width: 300px;
+  height: 360px;
   background-color: #fff;
   box-sizing: border-box;
   box-shadow: 0 5px 50px rgba(0, 0, 0, 0.5);
@@ -134,4 +169,36 @@ body::before {
 .show_td {
     display: table-cell;
     border: 0.5em solid lightblue;
+}
+
+#my_calendar {
+    position: absolute;
+    left: 50%;
+    margin: auto;
+    margin-left:auto; 
+    margin-right:auto;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- Month List --- */
+#month_link_table {
+    display:table;
+    margin-left:auto; 
+    margin-right:auto;
+}
+.month_link_tr {
+    display: table-row;
+    height: 30px;  
+}
+.month_link_td {
+    display: table-cell;
+    width: 50px;
+    border: 10px solid black; 
+    size: 150%;
+}
+
+.month_link {
+    font-size: 150%;
+    color: gray;    
 }
