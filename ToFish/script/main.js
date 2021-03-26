@@ -196,13 +196,28 @@ function onClickToImage(clicked_id) {
     // Jump to show image
     window.location.href="#date_picture";
 
+    var picture_width = document.getElementById("date_picture").width;
+    var picture_display_threshold = 700; // Width >700px should be on PC, otherwise on mobile.
+
+    // Check picture size (but following way is check previous picture which is already added into html.)
+    /*
+    var image_width = document.getElementById("date_picture").naturalWidth;
+    var image_height = document.getElementById("date_picture").naturalHeight;
+    alert(image_width + "x" + image_height);
+    */
+
     // Dynamically give image source
     if (SHOW_ORIGINAL_SIZE_PHOTO) {
         var picture_name = clicked_id.slice(-6) + '.JPG';
         document.getElementById("date_picture").src = "img\\DatePicture\\" + picture_name;
-    } else {
+    } else if (picture_width > picture_display_threshold) {
+        // Display on PC
         var picture_name = clicked_id.slice(-6) + '.jpg';
-        document.getElementById("date_picture").src = "img\\DatePicture_halfsize\\" + picture_name;
+        document.getElementById("date_picture").src = "img\\DatePicture_HalfSize\\" + picture_name;
+    } else {
+        // Display on mobile
+        var picture_name = clicked_id.slice(-6) + '.jpg';
+        document.getElementById("date_picture").src = "img\\DatePicture_QuarterSize\\" + picture_name;
     }
 
     /* need to stop the form sending of the form
@@ -210,5 +225,5 @@ function onClickToImage(clicked_id) {
      for stopping a form , look up preventing form submission  */
     
     //e.preventDefault();
-    //e.stopPropagation(); 
+    //e.stopPropagation();
 }

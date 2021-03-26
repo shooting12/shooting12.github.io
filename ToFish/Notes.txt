@@ -1,0 +1,16 @@
+Purpose of each html:
+  1. index.html 
+     --> Main page.
+
+  2. test.html
+     --> Test purpose at first.
+     --> Calendar for all our dating days.
+
+  3. huge_calendar.html
+     --> Page for developing dynamic huge interaction calendar.
+
+
+Bugs to be fix:
+  1. Loading images is too slow.
+  2. Extend width of horizontal images to have larger photo.
+  3. Image would flash on PC side, probably due to loading time.
