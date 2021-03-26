@@ -213,11 +213,11 @@ function onClickToImage(clicked_id) {
     } else if (picture_width > picture_display_threshold) {
         // Display on PC
         var picture_name = clicked_id.slice(-6) + '.jpg';
-        document.getElementById("date_picture").src = "img\\DatePicture_HalfSize\\" + picture_name;
+        document.getElementById("date_picture").src = "img\\DatePicture_Half_Size\\" + picture_name;
     } else {
         // Display on mobile
         var picture_name = clicked_id.slice(-6) + '.jpg';
-        document.getElementById("date_picture").src = "img\\DatePicture_QuarterSize\\" + picture_name;
+        document.getElementById("date_picture").src = "img\\DatePicture_Quarter_Size\\" + picture_name;
     }
 
     /* need to stop the form sending of the form
