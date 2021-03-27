@@ -12,5 +12,6 @@ Purpose of each html:
 
 Bugs to be fix:
   1. Loading images is too slow.
+     - Possible solution: Load all images when show index, but hide first. Then only show clicked image afterwards.
   2. Extend width of horizontal images to have larger photo.
   3. Image would flash on PC side, probably due to loading time.
