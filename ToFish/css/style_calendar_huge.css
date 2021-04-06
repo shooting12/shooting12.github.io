@@ -185,7 +185,7 @@ font#copyright {
 }
 
 img#icon_gun {
-    display: inline-block;
+    display: block;
     margin-left:auto; 
     margin-right:auto;
     width: calc(100vw/20);
