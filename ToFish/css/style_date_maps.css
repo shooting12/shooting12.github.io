@@ -44,7 +44,7 @@ img#icon_fish {
     margin-left:auto; 
     margin-right:auto;
     width: calc(100vw/1.25);
-    height: calc(100vh/1.75);
+    height: calc(100vh*0.55);
 }
 
 /* Map List */
@@ -73,12 +73,12 @@ img#icon_fish {
 }
 
 .map_link {
-    font-size: 175%;
+    font-size: 200%;
     color: gray;    
 }
 
 .duration {
-    font-size: 150%;
+    font-size: 175%;
     color: gray;
 }
 
@@ -87,7 +87,7 @@ img#icon_fish {
 a#back_link{
     text-align: center;
     color: #1a75ff;
-    font-size: 150%;
+    font-size: 200%;
 }
 
 img#qr_code {
