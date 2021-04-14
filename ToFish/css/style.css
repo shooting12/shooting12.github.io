@@ -15,13 +15,6 @@ font#intro {
     font-family: monospace;
     font-style:oblique;
 }
-font#intro_smaller {
-    color: black;
-    font-size: 190%;    
-    font-weight: bold;
-    font-family: monospace;
-    font-style:oblique;
-}
 
 img#icon_fish {
     width: calc(100vw/16); 
