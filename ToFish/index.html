@@ -1,46 +1,139 @@
 <html>
+
 <head>
     <title>Happy Birthday</title> 
-    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="script/main.js"></script>
+    <link rel="stylesheet" href="css/style_calendar_huge.css">
     <link rel="icon" href="img/Icon_Fish.png">
 </head>
 
-<header class="center"> 
-    <font color="#0000FF" face="fantasy" size="8">Happy Birthday to Fish</font>
+<!-- Keep this coding for using javascript in html directly. -->
+  <!--
+<script>
+function myFunction2(year, month) {
+  document.getElementById("calendar_year").style.color = "gray";
+}
+</script>
+-->
+
+
+<header>
+    <audio controls id="music">
+      <source src="music/LoveAppearance_Part.mp3" type="audio/mpeg">
+      Your browser does not support audio tag！
+    </audio>
 </header> 
 
-<body>
+<body onload="myFunction(2020, 5)">
 <!-- Top -->
-<img id="icon_fish" src="img/Icon_Fish.png">
+  <font id="title" color="#0000FF" face="fantasy" size="8">Happy Birthday to Fish</font>
 
-<p>&nbsp;</p>
+  <img id="icon_fish" src="img/Icon_Fish.png">
 
-<div ><font id="intro">Release date 3/28</font></div>
-<div >
-    <font face="微軟正黑體" size="4">我想一般人應該無法猜到網址打開這網頁</font>
-    <br>
-    <font face="微軟正黑體" size="4">如果妳介意我可以拿掉 Let me know =)</font>
-</div>
+<!-- List date month -->
+  <div id="month_link_table" border="1">
+    <div class="month_link_tr">
+        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2019,12)">2019.Dec</a></div>
+        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,1)">2020.Jan</a></div>
+        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,5)">2020.May</a></div>
+        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,6)">2020.Jun</a></div>
+        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,7)">2020.Jul</a></div>
+        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,8)">2020.Aug</a></div>
+　  </div>
+    <div class="month_link_tr">
+        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,10)">2020.Oct</a></div>
+        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,11)">2020.Nov</a></div>
+        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,12)">2020.Dec</a></div>
+        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2021,1)">2021.Jan</a></div>
+        <div class="month_link_td"><a class="month_link" href="javascript: myFunction(2021,2)">2021.Feb</a></div>
+        <div class="month_link_td"><a class="month_link" href="date_maps.html">Maps</a></div>
+        
+　  </div>
+  </div>
+  <!-- Keep this coding for using table layout, but javascript has problem by this way. -->
+  <!--
+  <table id="month_link_table">
+    <tr class="month_link_tr">
+        <td class="month_link_td"><a class="month_link" href="javascript: myFunction(2019,12)">2019.Dec</a></td>
+        <td class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,1)">2020.Jan</a></td>
+        <td class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,5)">2020.May</a></td>
+        <td class="month_link_td"><a class="month_link" href="javascript: myFunction(2020,6)">2020.Jun</a></td>
+　  </tr>
+  </table>
+  -->
+
+ 
+<!-- Show month -->
+  <div id="divider_small"> </div>
+
+  <div id="my_calendar">
+    <div class="calendar">
+      <div class="calendar__picture">
+        <h2 id="calendar_month">May</h2>
+        <h3 id="calendar_year">2020</h3>
+      </div>
+      <div class="calendar__date" id="dynamic_calendar_number">
+        <div class="calendar__day">Sun</div>
+        <div class="calendar__day">Mon</div>
+        <div class="calendar__day">Tue</div>
+        <div class="calendar__day">Wed</div>
+        <div class="calendar__day">Thu</div>
+        <div class="calendar__day">Fri</div>
+        <div class="calendar__day">Sat</div>
+
+        <div class="calendar__number"></div>
+        <div class="calendar__number"></div>
+        <div class="calendar__number"></div>
+        <div class="calendar__number"></div>
+        <div class="calendar__number"></div>
+        <div class="calendar__number">1</div>
+        <div class="calendar__number">2</div>
+        <div class="calendar__number">3</div>
+        <div class="calendar__number">4</div>
+        <div class="calendar__number">5</div>
+        <div class="calendar__number">6</div>
+        <div class="calendar__number">7</div>
+        <div class="calendar__number">8</div>
+        <div class="calendar__number">9</div>
+        <div class="calendar__number">10</div>
+        <div class="calendar__number">11</div>
+        <div class="calendar__number">12</div>
+        <div class="calendar__number">13</div>
+        <div class="calendar__number">14</div>
+        <div class="calendar__number">15</div>
+        <div class="calendar__number">16</div>
+        <div class="calendar__number calendar__number--event_shooting">17</div>
+        <div class="calendar__number">18</div>
+        <div class="calendar__number">19</div>
+        <div class="calendar__number">20</div>
+        <div class="calendar__number">21</div>
+        <div class="calendar__number">22</div>
+        <div class="calendar__number">23</div>
+        <div class="calendar__number calendar__number--event_shooting">24</div>
+        <div class="calendar__number">25</div>
+        <div class="calendar__number">26</div>
+        <div class="calendar__number">27</div>
+        <div class="calendar__number">28</div>
+        <div class="calendar__number">29</div>
+        <div class="calendar__number">30</div>
+        <div class="calendar__number calendar__number--event_fish">31</div>
+      </div>
+    </div>
+  </div>
 
 
-<p>&nbsp;</p>
-
-<img id="UnderConstruction" src="img/UnderConstruction.jpg">
-<div>
-    <font face="微軟正黑體" size="4"> Too busy these days, but still wanna do something special.</font>
-    <br>
-    <font face="微軟正黑體" size="4"> Wait for 2 weeks.</font>
-    <br>
-    <font face="微軟正黑體" size="4"> Must see!!! </font>
-</div>
-<!-- Center -->
+<!-- Show go out date picture -->
+  <div id="divider_small"> </div>
+  
+  <a class="image_link" href="#my_calendar">
+    <img id="date_picture" src="img\DatePicture\200517.JPG">
+  </a>
 
 <!-- Bottom -->
-<div id="divider_bottom"></div>
+<!--
+<div id="divider_small"></div>
 <div><img id="qr_code" src="img/QRcode.png"></div>
 <br>
-<div><font id="copyright" face="monospace"><b>Produced by Shooting</b></font></div>
 <div><img id="icon_gun" src="img/Icon_Gun.png"></div>
-
-
+-->
 </body>

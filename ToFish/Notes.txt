@@ -1,13 +1,16 @@
 Purpose of each html:
   1. index.html 
      --> Main page.
-
-  2. test.html
-     --> Test purpose at first.
-     --> Calendar for all our dating days.
-
-  3. huge_calendar.html
      --> Page for developing dynamic huge interaction calendar.
+  
+  2. date_maps.html
+     --> related to main page, showing go out maps.
+
+  3. under_construction.html
+     --> Original main page.
+
+  4. calendar.html
+     --> Calendar for all our dating days.    
 
 
 Bugs to be fix:
