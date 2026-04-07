@@ -1,1 +1,0 @@
-# shooting12.github.io
