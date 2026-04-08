@@ -7,4 +7,4 @@ This branch is used for backing up old personal entry point website.
 * It ever contains following projects:
   - ToFish birthday website; now move to ./ToFish/ repo
   - ToCMU video essay website; now removed
-  - My simple personal website with only contains profile photo
+  - My simple personal website only contains profile photo
