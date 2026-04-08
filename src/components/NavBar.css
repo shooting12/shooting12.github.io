@@ -1,0 +1,50 @@
+.nav-bar-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -3rem;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.nav-bar {
+  display: flex;
+  gap: 1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  background: var(--glass-bg);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--accent-blue);
+  background: rgba(0, 0, 0, 0.05); /* Suitable for the current Light Theme */
+}
+
+@media (max-width: 900px) {
+  .nav-bar-container {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .nav-bar {
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .nav-link {
+    font-size: 0.85rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
