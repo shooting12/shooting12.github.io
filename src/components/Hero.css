@@ -124,6 +124,52 @@
   display: block;
 }
 
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.skill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  cursor: default;
+}
+
+.skill-tag::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  background: linear-gradient(90deg, rgba(8,145,178,0.08), rgba(37,99,235,0.12), rgba(124,58,237,0.08));
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.skill-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px var(--glass-glow);
+  border-color: rgba(37, 99, 235, 0.35);
+}
+
+.skill-tag:hover::before {
+  opacity: 1;
+}
+
 @media (max-width: 900px) {
   .hero-container {
     flex-direction: column-reverse;
