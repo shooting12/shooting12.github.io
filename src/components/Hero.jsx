@@ -1,5 +1,5 @@
 import React from 'react';
-import { Code, User, Mail, MapPin, FileText, GraduationCap } from 'lucide-react';
+import { Code, User, Mail, MapPin, FileText, GraduationCap, Smartphone, Layers, Eye, Cpu } from 'lucide-react';
 import profileImg from '../assets/profile.jpg';
 import './Hero.css';
 
@@ -20,6 +20,25 @@ export default function Hero() {
             <span style={{ fontSize: '1rem', fontWeight: 500, lineHeight: '1.4' }}>
               M.S. in School of Computer Science, <span className="text-gradient">Carnegie Mellon University</span>
             </span>
+          </div>
+
+          <div className="hero-tags">
+            <div className="skill-tag">
+              <Smartphone size={14} />
+              <span>Android</span>
+            </div>
+            <div className="skill-tag">
+              <Layers size={14} />
+              <span>AR/VR</span>
+            </div>
+            <div className="skill-tag">
+              <Eye size={14} />
+              <span>Computer Vision</span>
+            </div>
+            <div className="skill-tag">
+              <Cpu size={14} />
+              <span>Machine Learning</span>
+            </div>
           </div>
 
           <p className="description text-secondary">
